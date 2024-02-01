@@ -21,55 +21,6 @@ a{
     display: none;
 }
 
-@media (max-width: 700px) {
-    body{
-    height: 100vh;
-    }
-
-    header {
-      padding: 0 30px;
-    }
-}
-
-@media (max-width: 700px) {
-    .nav-links{
-        position: absolute;
-        background: #fff;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-    }
-
-    .nav-links .fa-solid{
-        display: block;
-        color: blueviolet;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-
-    .nav-links ul{
-        padding: 30px;
-    }
-
-    .nav .fa-solid{
-        display: block;
-        color: blueviolet;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-
-    .row{
-     flex-direction: column;
-     font-size: 15px;
-    }
-}
-
 nav{
    display: flex;
    justify-content: space-between;
@@ -104,6 +55,63 @@ nav{
 .VP:hover{
    background-color: blueviolet;
    color: #fff;
+}
+
+@media (max-width: 700px) {
+    body{
+    height: 100vh;
+    }
+
+    header {
+      padding: 0 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav-links{
+        position: absolute;
+        background: rgb(14, 1, 26);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .nav-links .fa-solid{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links ul li a{
+        color: red;
+    }
+
+    .nav .fa-solid{
+        display: block;
+        color: blueviolet;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .row{
+     flex-direction: column;
+     font-size: 15px;
+    }
 }
 
 .text-box{
@@ -182,10 +190,6 @@ nav{
     .loc{
         height: 100vh;
     }
-
-    .intro-2 img{
-        padding-top: 0;
-    }
 }
 
 @media (max-width: 700px) {
@@ -233,7 +237,7 @@ nav{
 .cta{
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(26, 2, 26, 0.7),rgba(26, 2, 26, 0.7));
+    background: rgb(14, 1, 26);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -292,14 +296,23 @@ nav{
     margin-left: 400px;
 }
 
+.lg img{
+    padding-right: 10px;
+}
+
 @media(max-width: 700px){
     .footo{
         font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 500px;
     }
 
     .lg{
       display: flex;
       justify-content: space-between;
+      padding-left: 100px;
     }
 }
 
